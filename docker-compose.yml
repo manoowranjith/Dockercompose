@@ -1,0 +1,10 @@
+version: '3'
+services:
+  container-react:
+    build: .
+    ports:
+      - "4000:3000"
+  container-node:
+    image: 'stockhome-node'
+    ports:
+      - "4001:3001"
